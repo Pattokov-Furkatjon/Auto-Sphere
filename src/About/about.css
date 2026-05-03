@@ -1,0 +1,11 @@
+.abocon {
+    padding: 80px 20px;
+    min-height: 400px;
+}
+
+.abocon h1 {
+    color: #1a1a2e;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}

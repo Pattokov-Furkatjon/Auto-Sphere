@@ -1,0 +1,4 @@
+body{
+    animation: fadeIn 2.5s ease;
+    overflow-x: hidden;
+}

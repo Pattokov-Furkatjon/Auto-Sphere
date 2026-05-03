@@ -1,0 +1,236 @@
+/* ═══════════════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════════════ */
+
+.footer {
+  background: #07070c;
+  border-top: 1px solid var(--border);
+  padding: 60px 80px 40px;
+}
+
+.footer .container {
+  width: 100%;
+}
+
+/* Top Row */
+.footer__top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Logo */
+.footer__logo {
+  font-size: 28px;
+  font-family: 'Bebas Neue', serif;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  margin: 0;
+  display: flex;
+  gap: 4px;
+}
+
+.footer__logo-auto {
+  color: var(--accent);
+}
+
+.footer__logo-sphere {
+  color: var(--text-primary);
+}
+
+.footer__tagline {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 220px;
+}
+
+/* Column Title */
+.footer__col-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+}
+
+/* Links */
+.footer__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__links a {
+  font-size: 13px;
+  color: var(--text-muted);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.footer__links a:hover {
+  color: var(--text-primary);
+}
+
+/* Connect Form */
+.footer__connect-text {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.footer__email-form {
+  display: flex;
+  gap: 0;
+  margin-top: 8px;
+}
+
+.footer__email-input {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 12px 16px;
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  flex: 1;
+  transition: var(--transition);
+}
+
+.footer__email-input::placeholder {
+  color: var(--text-muted);
+}
+
+.footer__email-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: var(--bg-card-hover);
+}
+
+.footer__email-button {
+  background: var(--accent);
+  color: var(--bg-primary);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: var(--transition);
+}
+
+.footer__email-button:hover {
+  background: var(--accent-hover);
+}
+
+/* Divider */
+.footer__divider {
+  height: 1px;
+  background: var(--border);
+  margin: 40px 0 24px;
+}
+
+/* Bottom Row */
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.footer__policies {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.footer__policies a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer__policies a:hover {
+  color: var(--text-primary);
+}
+
+.footer__policies span {
+  opacity: 0.5;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 50px 40px 30px;
+  }
+
+  .footer__top {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px 24px;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer__email-form {
+    width: 100%;
+  }
+
+  .footer__email-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__logo {
+    font-size: 24px;
+  }
+
+  .footer__email-form {
+    flex-direction: column;
+  }
+
+  .footer__email-input,
+  .footer__email-button {
+    border-radius: var(--radius-sm);
+  }
+
+  .footer__policies {
+    flex-wrap: wrap;
+  }
+}
