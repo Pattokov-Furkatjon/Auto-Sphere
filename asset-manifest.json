@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Auto-Sphere/static/css/main.3750045c.css",
+    "main.js": "/Auto-Sphere/static/js/main.d4055765.js",
+    "static/media/mers.png": "/Auto-Sphere/static/media/mers.feb79a762b53d9f075b5.png",
+    "static/media/spector.png": "/Auto-Sphere/static/media/spector.a00a546e36b9064f46d4.png",
+    "index.html": "/Auto-Sphere/index.html",
+    "main.3750045c.css.map": "/Auto-Sphere/static/css/main.3750045c.css.map",
+    "main.d4055765.js.map": "/Auto-Sphere/static/js/main.d4055765.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3750045c.css",
+    "static/js/main.d4055765.js"
+  ]
+}
